@@ -1,5 +1,5 @@
 body {
-    background: #DFCAEE;
+    background: #9184A2;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 26px;
@@ -41,7 +41,7 @@ main {
     border: none;
 }
 .text-area {
-    background-color: #DFCAEE;
+    background-color: #9184A2;
 }
 .text-area:focus, .mensaje:focus {
     outline: none;
@@ -99,4 +99,24 @@ main {
     margin: 90px 0;
     background-color: #C5DEDE;
     color: #000000;
+  }
+  footer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #59535D;
+    display: flex;
+    text-align: left;
+    font-size: 13px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .red-footer {
+    width: 20%;
+  }
+  .copyr {
+    flex: 0 0 calc(60% - 10px);
+  }
+  .red {
+    flex: 0 0 calc(40% - 10px);
   }
