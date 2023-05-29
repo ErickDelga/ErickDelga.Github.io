@@ -5,7 +5,7 @@ const mensaje = document.querySelector(".mensaje");
 const canvas = document.getElementById("canv");
 const ctx = canvas.getContext("2d");
 const w = canvas.width = document.body.offsetWidth;
-const h = canvas.height = /*document.body.offsetHeight*/ 100;
+const h = canvas.height = 100;
 
 const cols = Math.floor(w/20)+1;
 const ypos = Array(cols).fill(0);
@@ -37,7 +37,6 @@ function btnEncriptar() {
     const textoEncriptado = encriptador(textArea.value)
     mensaje.value = textoEncriptado
     textArea.value = "";
-    //mensaje.style.backgroundImage = "none";
     mensaje.style.display = "block";
     document.querySelector(".btn-copiar").style.display = "block";
     document.querySelector(".informacion").style.display = "none";

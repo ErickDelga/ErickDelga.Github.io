@@ -11,11 +11,11 @@ header {
 }
 .logo {
     position: absolute;
-    top: 20px;
+    top: 12px;
     left: 10px;
     padding-top: 10px;
     margin-left: 10px;
-    width: 10%;
+    width: 11%;
 }
 main {
     width: 80%;
@@ -23,6 +23,12 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    position: relative;
+}
+.limpiar {
+    position: absolute;
+    max-width: 6%;
+    right: 30px;
 }
 .primerContenedor {
     margin-top: 80px;
@@ -31,7 +37,7 @@ main {
 .segundoContenedor {
     margin-top: 20px;
     flex: 0 0 calc(30% - 23px);
-    background-color: #FFFFFF;
+    background-color: #afa2a2;
     border: 1px solid #0A3871;
     border-radius: 10px;
 }
@@ -51,6 +57,8 @@ main {
 }
 .mensaje {
     margin: 60px 0px 80px;
+    background-color: #afa2a2;
+    background-color: ;
 }
 .terminos {
     font-size: 16px;
