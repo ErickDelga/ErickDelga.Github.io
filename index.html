@@ -13,28 +13,34 @@
 </head>
 <body>
     <header>
+        <canvas id="canv" width="100%" height="1px"></canvas>
         <img src="img/Logo.png" alt="Logo-Alura" class="logo">
     </header>
     <main>
-        <section>
+        <section class="primerContenedor">
                 <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el Texto"></textarea>
                 <div>
-                    <h6 class="informacion"> <img src="img/bi_exclamation-circle-fill-1.png" alt="alet informacion"> Solo letras minúsculas y sin acentos</h6>
+                    <h6 class="terminos"> <img src="img/bi_exclamation-circle-fill-1.png" alt="alet-informacion"> Solo letras minúsculas y sin acentos</h6>
                 </div>
                 <div class="botones">
                     <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
                     <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
                 </div>
         </section>
-        <section class="conmensaje">
-            <div>
-               <textarea class="mensaje" cols="18" rows="5"></textarea>
+        <section class="segundoContenedor">
+            <div class="informacion">
+                <img src="img/munheco.png" alt="munheco">
+                <h3>Ningún Mensaje Fue Encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
             </div>
+            <div>
+               <textarea class="mensaje" cols="20" rows="8"></textarea>
             <div>
                 <button class="btn-copiar" onclick="btnCopiar()">Copiar</button><span id="alerta"></span>
             </div>
         </section>
     </main>
+    
 </body>
 <script src="Javascript/javascript.js"></script>
 </html>
