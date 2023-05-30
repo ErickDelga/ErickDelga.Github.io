@@ -27,7 +27,7 @@ main {
 }
 .limpiar {
     position: absolute;
-    max-width: 6%;
+    max-width: 4%;
     right: 30px;
 }
 .primerContenedor {
@@ -127,4 +127,7 @@ main {
   }
   .red {
     flex: 0 0 calc(40% - 10px);
+  }
+  .limpiar {
+    cursor: pointer;
   }

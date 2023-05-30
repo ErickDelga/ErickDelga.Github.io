@@ -42,7 +42,6 @@ function btnEncriptar() {
     document.querySelector(".informacion").style.display = "none";
 
 }
-
 function encriptador(stringEncriptada){
     let matrizCodigo = [["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];
     stringEncriptada = stringEncriptada.toLowerCase();
@@ -74,12 +73,12 @@ function desencriptador(stringDesencriptada){
 }
 function btnCopiar(){
     mensaje.focus();
-    document.execCommand('selectAll');
-    document.execCommand('copy');
+    mensaje.select();
+    navigator.clipboard.writeText(mensaje.value);
     mensaje.value = "";
 
     alert("Texto Copiado");
-    //alerta.innerHTML = "Copiado al portapapeles";
-    //setTimeout(()=> alerta.innerHTML = "", 4000);
-
+}
+function btnLimpiar() {
+    location.reload();
 }
