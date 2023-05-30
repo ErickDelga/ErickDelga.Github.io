@@ -41,6 +41,22 @@ main {
     border: 1px solid #0A3871;
     border-radius: 10px;
 }
+@media (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .informacion {
+        display: none;
+    }
+    .text-area {
+        width: 100%;
+    }
+    .segundoContenedor {
+        
+    }
+}
 .text-area, .mensaje {
     width: 98%;
     font-size: 26px;
@@ -130,4 +146,7 @@ main {
   }
   .limpiar {
     cursor: pointer;
+  }
+  @media (min-width: 768px) {
+      
   }
